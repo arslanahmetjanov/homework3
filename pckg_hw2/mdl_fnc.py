@@ -11,7 +11,7 @@ def average_count(some_structure):
     else:
         return("Ошибка в типах данных параметров. Параметр может быть списком, множеством, кортежом или словарем")
 
-def max(a, b, c):
+def max_count(a, b, c):
     if (type(a) == int and type(b) == int and type(c) == int):
         if (a >= b and a >= c):
             return a
