@@ -1,3 +1,4 @@
+# Декораторы для обработки различных типов данных
 def squaring_decorator(function):
     def wrapper(a, b, c):
         func = function(a, b, c)

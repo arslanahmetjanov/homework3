@@ -1,3 +1,4 @@
+# Функции для обработки списков
 def sum_for_list(some_list, choice):
     if (type(some_list) == list and type(choice) == int and choice == 1):
         return (sum(some_list))
@@ -53,3 +54,10 @@ def del_double_of_list(some_list):
         return original_list
     else:
         return ("Ошибка в типе данных параметра. Параметр - список")
+
+def unique_list(l):
+    if (type(l) == list):
+        t = [] 
+        t = list(set(l))
+    else:
+        return "Ошибка в типе данных параметра. Параметр - список"

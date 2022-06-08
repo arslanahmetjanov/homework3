@@ -1,3 +1,4 @@
+# Функции для обработки словарей
 def add_to_dict(some_dict, some_key, some_value):
     if (type(some_dict) == dict and type(some_key) == int):
         some_dict[some_key] = some_value

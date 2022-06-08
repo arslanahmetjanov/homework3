@@ -1,3 +1,5 @@
+# Функции для обработки кортежей
+
 def add_set(some_tuple, some_value):
     if (type(some_tuple) == tuple):
         some_list = list(some_tuple)

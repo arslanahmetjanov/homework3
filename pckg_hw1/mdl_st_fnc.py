@@ -1,3 +1,4 @@
+# Функции для обработки множеств
 def del_of_set(some_set, some_value):
   if(type(some_set) == set):
       if some_value in some_set: 

@@ -1,3 +1,4 @@
+# Функции для обработки строк
 def choise_len_for_str(some_str, choice):
     if (type(some_str) == str and (choice == 1 or choice == 2 )):
         if choice == 1:
@@ -70,4 +71,21 @@ def find_count_of_item_in_str(some_str):
                 item_max = item
         return f"{item_max} встречается чаще всего, а именно {counter_max} раз(-а)"
     else:
-        return("Ошибка в типах данных параметров. Параметр - строка")
+        return("Ошибка в типе данных параметра. Параметр - строка")
+
+def custom_invert_str(some_str):
+    if (type(some_str) == str):
+        return some_str[::-1]
+    else:
+        return "Ошибка в типе данных параметра. Параметр - строка"
+
+def check_palindrom(some_str): 
+    if (type(some_str) == str):
+        f = lambda s: s[::-1]
+        check_str = f(some_str)
+        if some_str == check_str:
+            return True
+        else:
+            return False
+    else:
+        return "Ошибка в типе данных параметра. Параметр - строка"
