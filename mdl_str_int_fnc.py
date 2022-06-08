@@ -1,4 +1,26 @@
-# Функции для обработки строк
+# Модуль функций для чисел и строк
+# Функции для чисел
+def max_count(a, b, c):
+    if (type(a) == int and type(b) == int and type(c) == int):
+        if (a >= b and a >= c):
+            return a
+        elif (b >= a and b >= c):
+            return b
+        elif (c >= a and c >= b):
+            return c
+    else:
+        return "Ошибка в типах данных параметров. Параметры - цифры в виде (1, 2, 3)"
+
+
+def factorial_count(n):
+    if (type(n) == int and n > 0):
+        if n == 1:
+            return 1
+        return factorial_count(n - 1) * n
+    else:
+        return "Ошибка в типе данных параметра. Параметр - число"
+
+#  Функции для строк
 def choise_len_for_str(some_str, choice):
     if (type(some_str) == str and (choice == 1 or choice == 2 )):
         if choice == 1:

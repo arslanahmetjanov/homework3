@@ -1,4 +1,4 @@
-# Функции для обработки списков
+# Модуль для списков
 def sum_for_list(some_list, choice):
     if (type(some_list) == list and type(choice) == int and choice == 1):
         return (sum(some_list))
@@ -10,7 +10,7 @@ def sum_for_list(some_list, choice):
     else:
         return("Ошибка в типе данных параметра. Параметр - список чисел")
 
-def multyply_of_list(some_list, num):
+def multiply_of_list(some_list, num):
     if  (type(some_list) == list and type(num) == int):
         for i in range(len(some_list)):
             some_list[i] *= num
@@ -55,9 +55,10 @@ def del_double_of_list(some_list):
     else:
         return ("Ошибка в типе данных параметра. Параметр - список")
 
-def unique_list(l):
-    if (type(l) == list):
-        t = [] 
-        t = list(set(l))
+def unique_list(some_list):
+    if (type(some_list) == list):
+        new_list = [] 
+        new_list = list(set(some_list))
+        return new_list
     else:
         return "Ошибка в типе данных параметра. Параметр - список"
