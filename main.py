@@ -1,8 +1,34 @@
 import mdl_lst_fnc
-from mdl_str_int_fnc import max_count
-from mdl_sm_strctr import max_count as dec_max_count
+from mdl_str_int_fnc import *
+import mdl_sm_strctr as MSS
 
-
-print(mdl_lst_fnc.unique_list([1,2,3,3,3,1,1]))
-print(max_count(1,2,3))
-print(dec_max_count(1,2,3))
+mdl_lst_fnc.sum_for_list([1,2,3], 2)
+mdl_lst_fnc.multiply_of_list([1,2,3], 2)
+mdl_lst_fnc.custom_concatenation([1,2,3], [4,5,6], 2)
+mdl_lst_fnc.change_index([1,2,3])
+mdl_lst_fnc.in_one_number([1,2,3])
+mdl_lst_fnc.del_double_of_list([1,2,3,3,3,3,3])
+mdl_lst_fnc.unique_list([1,2,2,2,3])
+max_count(1,2,3)
+print(factorial_count(3))
+choise_len_for_str("123", 2)
+change_dollar_for_str("123", "1")
+final_plus_end_for_str("123")
+invert_str("123")
+index_for_str("123")
+change_register_str("hi")
+find_count_of_item_in_str("11123")
+custom_invert_str("123")
+check_palindrom("оно")
+MSS.average_count(((1,2,3,4,5,6)))
+MSS.add_to_dict({"one" : "1"}, "two", "2")
+MSS.del_of_dict({"one" : "1", "two" : "2"}, "two")
+MSS.sum_dict({"one" : "1"}, {"two" : "2"}, {"three" : "3"})
+MSS.key_in_dict({"one" : "1", "two" : "2"}, "two")
+MSS.del_of_set({1,2,3}, 3)
+MSS.custom_len_of_set({1,2,3}, 2)
+MSS.check_value_in_set({1,2,3}, 1)
+MSS.add_tuple((1,2,3), 3)
+MSS.count_tuple_in_list([(1,2,3), 1])
+print(MSS.count_max(1,2,3))
+print(MSS.str_invert_custom("hi"))
